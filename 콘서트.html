@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAN</title>
+    <link rel="stylesheet" href="CHAN.css">
+</head>
+<body>
+    <div class="sidebar">
+        <button id="btnHome">콘서트 라이브</button>
+        <button id="btnAbout">노래방 라이브</button>
+        <button id="btnContact">축가 라이브</button>
+        <button id="btnBlog">거리공연 라이브</button>
+        <button id="btnProjects">영상 올리기</button>
+    </div>
+    <header>
+        <h1>CHANMUSIC</h1>
+    </header>
+
+    <main>
+        <article class="video-post">
+            <h2>콘서트 라이브 영상</h2>
+            <div class="video-list" id="videoList">
+                <div class="video-thumbnail" data-video-url="file:///C:\Users\HP\Desktop\CHAN\videos/콘서트1.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트1.PNG" alt="Video Thumbnail" id="thumbnail1">
+                    <p>콘서트)어디에도</p>
+                </div>
+
+                <div class="video-thumbnail" data-video-url="file:///C:/Users/HP/Desktop/CHAN/videos/콘서트2.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트2.PNG" alt="Video Thumbnail1" id="thumbnail2">
+                    <p>콘서트)처음처럼</p>
+                </div>
+
+                <div class="video-thumbnail" data-video-url="file:///C:/Users/HP/Desktop/CHAN/videos/콘서트3.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트3.PNG" alt="Video Thumbnail" id="thumbnail3">
+                    <p>콘서트)바라보기</p>
+                </div>
+
+                   
+                <div class="video-thumbnail" data-video-url="file:///C:/Users/HP/Desktop/CHAN/videos/콘서트4.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트4.PNG" alt="Video Thumbnail" id="thumbnail4">
+                    <p>콘서트)그대 그대 그대</p>
+                </div>
+
+                <div class="video-thumbnail" data-video-url="file:///C:/Users/HP/Desktop/CHAN/videos/콘서트5.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트5.PNG" alt="Video Thumbnail" id="thumbnail4">
+                    <p>콘서트)입술의 말
+                    </p>
+                </div>
+
+                <div class="video-thumbnail" data-video-url="file:///C:/Users/HP/Desktop/CHAN/videos/콘서트6.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트6.PNG" alt="Video Thumbnail" id="thumbnail4">
+                    <p>콘서트)어김없이</p>
+                </div>
+
+                <div class="video-thumbnail" data-video-url="file:///C:/Users/HP/Desktop/CHAN/videos/콘서트7.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트7.PNG" alt="Video Thumbnail" id="thumbnail4">
+                    <p>콘서트)그리움의 거리</p>
+                </div>
+
+                <div class="video-thumbnail" data-video-url="file:///C:/Users/HP/Desktop/CHAN/videos/콘서트8.mp4" onclick="playVideo(this)">
+                    <img src="picture/콘서트8.PNG" alt="Video Thumbnail" id="thumbnail4">
+                    <p>콘서트)백야</p>
+                </div>
+                <!-- 추가적인 영상 리스트 아이템을 필요한 만큼 추가합니다. -->
+            </div>
+        </article>
+
+        <div id="videoPlayer" style="display: none;">
+            <video controls id="player">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+
+    <script src="CHAN.js"></script>
+
+</body>
+</html>
